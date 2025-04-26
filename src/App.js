@@ -1,57 +1,41 @@
-import React from 'react';
-import Game from './components/Game';
-import './App.css';
+import React, { useState } from "react";
+import LandingPage from "./components/LandingPage";
+import CategoryPage from "./components/CategoryPag";
+import QuizPage from "./components/QuizPage";
+import ResultPage from "./components/ResultPage";
+import Footer from "./components/Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
+  const [step, setStep] = useState("landing");
+  const [category, setCategory] = useState("");
+  const [score, setScore] = useState(0);
+
+  const handleStart = () => setStep("category");
+  const handleCategorySelect = (selectedCategory) => {
+    setCategory(selectedCategory);
+    setStep("quiz");
+  };
+  const handleQuizEnd = (finalScore) => {
+    setScore(finalScore);
+    setStep("result");
+  };
+  const handleRestart = () => {
+    setStep("landing");
+    setScore(0);
+    setCategory("");
+  };
+
   return (
-    <div className="app">
-      <header className="app-header">
-        <h1>Tic Tac Toe</h1>
-      </header>
-      <main>
-        <Game />
-      </main>
-      <footer>
-        <div className="social-icons">
-          <a
-            href="https://www.facebook.com/profile.php?id=61551771230717&mibextid=ZbWKwL"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon facebook"
-            aria-label="Facebook"
-          >
-            <i className="fab fa-facebook"></i>
-          </a>
-          <a
-            href="https://linkedin.com/in/farhad-ali-turk-135369305"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon linkedin"
-            aria-label="LinkedIn"
-          >
-            <i className="fab fa-linkedin"></i>
-          </a>
-          <a
-            href="https://github.com/FarhadAliTurk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon github"
-            aria-label="GitHub"
-          >
-            <i className="fab fa-github"></i>
-          </a>
-          <a
-            href="mailto:369farhadali@gmail.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon email"
-            aria-label="Email"
-          >
-            <i className="fas fa-envelope"></i>
-          </a>
-        </div>
-      </footer>
+    <div>
+      {step === "landing" && <LandingPage onStart={handleStart} />}
+      {step === "category" && <CategoryPage onSelect={handleCategorySelect} />}
+      {step === "quiz" && <QuizPage category={category} onEnd={handleQuizEnd} />}
+      {step === "result" && <ResultPage score={score} onRestart={handleRestart} />}
+      <Footer />
     </div>
+    
   );
 }
 

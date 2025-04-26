@@ -1,133 +1,221 @@
 /* General Styles */
 body {
   font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #343a40; /* Dark gray text */
   margin: 0;
   padding: 0;
-  background: linear-gradient(135deg, #1a2a6c, #b21f1f, #fdbb2d);
-  color: #fff;
-  text-align: center;
-  height: 100vh; /* Full viewport height */
-  overflow: hidden; /* Prevent unwanted scrolling */
-  display: flex;
-  justify-content: center; /* Center horizontally */
-  align-items: center; /* Center vertically */
+  box-sizing: border-box;
+  overflow: hidden; /* Disable scrolling */
+  height: 100vh; /* Ensure the body takes full viewport height */
+  width: 100vw; /* Ensure the body takes full viewport width */
 }
 
-/* App Container */
-.app {
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Center Content Utility */
+.vh-100-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden; /* Ensure no scrolling for centered content */
+}
+
+/* Buttons */
+button {
+  transition: all 0.3s ease;
+  border-radius: 50px;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(13, 202, 240, 0.5);
+}
+
+/* Landing Page */
+.landing-page {
+  text-align: center;
+  background-color: #ffffff;
+  height: 100vh; /* Fit within viewport */
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
-  width: 100%;
-  max-width: 400px; /* Limit the app width */
 }
 
-/* Header */
-.app-header {
-  background-color: rgba(0, 0, 0, 0.6);
-  padding: 1rem;
-  width: 100%;
+.landing-page h1 {
+  font-size: 3rem;
+  color: #0d6efd; /* Bootstrap primary color */
+}
+
+.landing-page button {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+}
+
+/* Category Page */
+.category-page {
+  height: 100vh; /* Fit within viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
 }
 
-.app-header h1 {
-  font-size: 2rem;
-  margin: 0;
-  color: #ffd700;
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+.category-page h1 {
+  font-size: 2.5rem;
+  color: #0d6efd;
+  margin-bottom: 2rem;
 }
 
-/* Game Container */
-.game {
-  background: rgba(255, 255, 255, 0.2);
-  padding: 1.5rem;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-  margin-top: 1rem;
-  width: 100%;
-}
-
-/* Status Display */
-.status {
-  font-size: 1.2rem;
+.category-page .btn {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
   margin-bottom: 1rem;
-  color: #ffd700;
-  font-weight: bold;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* Board Styles */
-.board {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
-  justify-content: center;
-  margin: auto;
-  width: 100%;
+/* Quiz Page */
+.quiz-card {
+  max-width: 600px;
+  margin: 0 auto;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Square Styles */
-.square {
-  width: 100%;
-  padding-bottom: 100%; /* Makes squares responsive */
-  position: relative;
-  background: rgba(255, 255, 255, 0.2);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+.quiz-card h5 {
   font-size: 1.5rem;
-  font-weight: bold;
-  color: #ffd700;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;
-  transition: all 0.3s ease;
-  cursor: pointer;
+  margin-bottom: 1rem;
+  color: #0d6efd;
 }
 
-.square:hover {
-  background: rgba(255, 255, 255, 0.4);
-  transform: scale(1.05);
-}
-
-/* Reset Button */
-.reset-btn {
-  margin-top: 1rem;
-  padding: 0.6rem 1rem;
-  background-color: #ffd700;
-  color: #333;
-  border: none;
-  border-radius: 8px;
+.quiz-card .btn {
+  padding: 0.5rem 1.5rem;
   font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
 }
 
-.reset-btn:hover {
-  background-color: #ffa500;
-  transform: scale(1.05);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+.quiz-card .btn-success {
+  background-color: #28a745 !important;
 }
 
-/* Footer Social Icons */
-.social-icons {
+.quiz-card .btn-danger {
+  background-color: #dc3545 !important;
+}
+
+.quiz-card .btn-outline-primary {
+  border-color: #0d6efd !important;
+  color: #0d6efd !important;
+}
+
+.quiz-card .btn-outline-primary:hover {
+  background-color: #0d6efd !important;
+  color: #fff !important;
+}
+
+.quiz-card .btn:disabled {
+  opacity: 0.6;
+}
+
+.quiz-progress {
+  margin-bottom: 1rem;
+}
+
+/* Result Page */
+.result-card {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.result-card h5 {
+  font-size: 1.5rem;
+  color: #0d6efd;
+  margin-bottom: 1rem;
+}
+
+.result-card p {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #28a745; /* Green for positive results */
+}
+
+.result-card button {
+  padding: 0.5rem 1.5rem;
+  font-size: 1rem;
   margin-top: 1rem;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
 }
 
-.social-icons a {
-  color: #ffd700;
-  text-decoration: none;
-  font-size: 1.8rem;
-  transition: all 0.3s ease;
+/* Footer */
+/* Footer Styles */
+footer {
+  background-color: #212529; /* Dark background */
+  color: #ffffff; /* White text */
+  padding: 20px 0;
+  position: fixed; /* Fixed position */
+  bottom: 0; /* Stick to the bottom */
+  width: 100%; /* Full width */
+  z-index: 1000; /* Ensure it sits above other content */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for better appearance */
 }
 
-.social-icons a:hover {
-  color: #ffa500;
-  transform: scale(1.2);
+footer .social-icon {
+  color: #ffffff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+footer .social-icon:hover {
+  color: #0dcaf0; /* Bootstrap primary accent color */
+  transform: scale(1.2); /* Slight zoom-in effect */
+}
+
+footer p {
+  font-size: 0.9rem;
+  color: #adb5bd; /* Muted text color */
+  margin: 0;
+}
+
+footer p:hover {
+  color: #ffffff; /* Highlight text on hover */
+  transition: color 0.3s ease;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .category-page h1 {
+    font-size: 2rem;
+  }
+
+  .quiz-card h5 {
+    font-size: 1.25rem;
+  }
+
+  .result-card h5 {
+    font-size: 1.25rem;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
 }

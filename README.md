@@ -1,129 +1,142 @@
-# React Tic Tac Toe 🎮
+# React Quiz App
 
-A fun and interactive **Tic Tac Toe** game built with **React**. This project demonstrates the use of React components, state management, and responsive design to create a classic game with a modern twist.
-
----
-
-## Features 🚀
-
-- **Interactive Gameplay**: Play the classic Tic Tac Toe game with a clean and responsive UI.
-- **Winner Celebration**: Confetti animation for the winner.
-- **Reset Option**: Restart the game anytime with a single click.
-- **Responsive Design**: Optimized for desktop, tablet, and mobile devices.
-- **Social Links**: Footer with links to the developer's social profiles.
+Welcome to the **React Quiz App**! This is a fully responsive, modern quiz application built with **React 19** and styled using **Bootstrap 5**. It allows users to test their knowledge with multiple-choice questions (MCQs) and provides a sleek, interactive user experience.
 
 ---
 
-## Demo 🎥
+## Features
 
-🚀 Check out the live demo: [Tic Tac Toe Game Demo](#)
+- **Dynamic Quiz Categories**: Choose between different quiz categories, such as:
+  - *Countries and their Capitals*
+  - *Countries and their Currencies*
+  
+- **Stylish Landing Page**: A beautifully designed landing page with a "Start Quiz" button.
+  
+- **Responsive UI**:
+  - Fully mobile-first design using the **Bootstrap grid system**.
+  - Optimized for all screen sizes.
+
+- **Interactive Question Display**:
+  - One question at a time with four multiple-choice options.
+  - Immediate feedback on the selected answer:
+    - **Green** for correct answers.
+    - **Red** for incorrect answers.
+  
+- **Smooth Animations**:
+  - Minimal, smooth animations using Bootstrap's `fade` and `show` classes.
+
+- **Score Summary**:
+  - Displays the final score in a modern card at the end of the quiz.
+  - Allows users to restart the quiz.
+
+- **Fixed Footer**:
+  - Includes social media links with hover effects for an added modern touch.
 
 ---
 
-## Screenshots 🖼️
+## Screenshots
 
-### Game Board
-![Game Board](https://via.placeholder.com/800x400)
+### Landing Page
+![Landing Page](./screenshots/landing-page.png)
+
+### Quiz Page
+![Quiz Page](./screenshots/quiz-page.png)
+
+### Result Page
+![Result Page](./screenshots/result-page.png)
 
 ---
 
-## Installation 🛠️
+## Technologies Used
 
-Follow these steps to set up the project on your local machine:
+- **React 19**: For building the dynamic user interface.
+- **Bootstrap 5**: For styling and responsive design.
+- **Font Awesome**: For modern social media icons.
+- **Custom CSS**: For additional styling and hover animations.
 
-### Prerequisites
-- Node.js (v16.0 or above)
-- npm (v8.0 or above)
+---
 
-### Steps
-1. Clone the repository:
+## Installation and Setup
+
+Follow these steps to clone and run the app on your local machine:
+
+1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/YourUsername/tic-tac-toe.git
+   git clone https://github.com/FarhadAliTurk/react-quiz-app.git
+   cd react-quiz-app
    ```
-2. Navigate to the project directory:
-   ```bash
-   cd tic-tac-toe
-   ```
-3. Install dependencies:
+
+2. **Install Dependencies**:
+   Ensure you have Node.js installed, then run:
    ```bash
    npm install
    ```
-4. Start the development server:
+
+3. **Start the Development Server**:
    ```bash
    npm start
    ```
-5. Open [http://localhost:3000](http://localhost:3000) in your browser to play the game.
+
+4. Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
 ---
 
-## Folder Structure 📂
+## Usage
+
+1. **Start the Quiz**:
+   - Click the "Start Quiz" button on the landing page.
+
+2. **Select a Category**:
+   - Choose a quiz category (e.g., Capitals or Currencies).
+
+3. **Answer Questions**:
+   - Select an answer for each question.
+   - The app will immediately show whether your answer is correct or incorrect.
+
+4. **View Results**:
+   - At the end of the quiz, view your final score.
+   - Restart the quiz if you'd like to try again.
+
+---
+
+## Folder Structure
 
 ```
-tic-tac-toe/
+react-quiz-app/
 ├── public/
-│   ├── index.html   # HTML template
+│   └── index.html
 ├── src/
 │   ├── components/
-│   │   ├── Board.js        # Board component
-│   │   ├── Game.js         # Game logic component
-│   │   ├── Square.js       # Individual square component
-│   ├── App.js              # Root component
-│   ├── index.js            # Entry point
-│   ├── App.css             # Game styles
-│   ├── index.css           # Global styles
-├── package.json            # Project metadata and dependencies
+│   │   ├── LandingPage.js
+│   │   ├── CategoryPage.js
+│   │   ├── QuizPage.js
+│   │   ├── ResultPage.js
+│   │   └── Footer.js
+│   ├── questions.js
+│   ├── App.js
+│   ├── index.js
+│   └── App.css
+└── README.md
 ```
 
 ---
 
-## Technologies Used 🛠️
+## Contribution
 
-- **React**: Modern JavaScript library for building user interfaces.
-- **React Confetti**: For winner celebration animation.
-- **CSS**: For responsive and visually appealing design.
+Contributions, issues, and feature requests are welcome! Feel free to check the [issues page](https://github.com/FarhadAliTurk/react-quiz-app/issues).
 
 ---
 
-## How to Play 🎲
+## Author
 
-1. The game starts with Player X.
-2. Click on any square to make your move.
-3. Alternate turns between Player X and Player O.
-4. The first player to align three symbols in a row, column, or diagonal wins.
-5. Click the **Reset Game** button to start a new game.
+**Farhad Ali Turk**
 
----
-
-## Contributing 🤝
-
-Contributions are welcome! If you'd like to contribute to this project, follow these steps:
-
-1. Fork the repository.
-2. Create a new branch:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Make your changes and commit them:
-   ```bash
-   git commit -m "Add feature-name"
-   ```
-4. Push to the branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Create a pull request.
+- [GitHub](https://github.com/FarhadAliTurk)
+- [LinkedIn](https://linkedin.com/in/farhad-ali-turk-135369305)
+- [Email](mailto:369farhadali@gmail.com)
 
 ---
 
-## License 📄
+## License
 
-This project is licensed under the **MIT License**.
-
----
-
-## Contact 📬
-
-If you have any questions or feedback, feel free to contact me:
-
-- **GitHub**: [FarhadAliTurk](https://github.com/FarhadAliTurk)
-- **Email**: [369farhadali@gmail.com](mailto:369farhadali@gmail.com)
+This project is licensed under the [MIT License](./LICENSE).
