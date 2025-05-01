@@ -30,6 +30,17 @@ function CategoryPage({ onSelect }) {
         >
           🔬 Discoveries & Inventions
         </button>
+        <br />
+        <br />
+        <button
+          className="btn btn-outline-primary btn-lg px-5 py-3 category-btn"
+          onClick={() => onSelect("scientificTools")}
+        >
+           🛠️ Scientific Tools
+        </button>
+    
+
+
       </div>
     </div>
   );

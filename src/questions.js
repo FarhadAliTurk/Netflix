@@ -1049,4 +1049,116 @@ export const questions = {
 
 
 
+
+
+
+
+    "scientificTools": [
+  {
+    "question": "What is a barometer used to measure?",
+    "options": ["Pressure", "Temperature", "Altitude", "Speed"],
+    "correctAnswer": "Pressure"
+  },
+  {
+    "question": "What does a thermometer measure?",
+    "options": ["Temperature", "Pressure", "Humidity", "Speed"],
+    "correctAnswer": "Temperature"
+  },
+  {
+    "question": "What is a microscope used to observe?",
+    "options": ["Microorganisms", "Stars", "Clouds", "Magnetic fields"],
+    "correctAnswer": "Microorganisms"
+  },
+  {
+    "question": "What does a seismograph measure?",
+    "options": ["Earthquakes", "Temperature", "Humidity", "Pressure"],
+    "correctAnswer": "Earthquakes"
+  },
+  {
+    "question": "What is a voltmeter used to measure?",
+    "options": ["Voltage", "Current", "Resistance", "Power"],
+    "correctAnswer": "Voltage"
+  },
+  {
+    "question": "What does a spectrometer measure?",
+    "options": ["Light", "Sound", "Pressure", "Distance"],
+    "correctAnswer": "Light"
+  },
+  {
+    "question": "What is a pH meter used to measure?",
+    "options": ["Acidity/Alkalinity", "Temperature", "Pressure", "Humidity"],
+    "correctAnswer": "Acidity/Alkalinity"
+  },
+  {
+    "question": "What does a calorimeter measure?",
+    "options": ["Heat", "Pressure", "Time", "Force"],
+    "correctAnswer": "Heat"
+  },
+  {
+    "question": "What is an altimeter used to measure?",
+    "options": ["Altitude", "Speed", "Pressure", "Temperature"],
+    "correctAnswer": "Altitude"
+  },
+  {
+    "question": "What is a hygrometer used to measure?",
+    "options": ["Humidity", "Temperature", "Speed", "Pressure"],
+    "correctAnswer": "Humidity"
+  },
+  {
+    "question": "What is a tachometer used to measure?",
+    "options": ["Speed of Rotation", "Temperature", "Altitude", "Pressure"],
+    "correctAnswer": "Speed of Rotation"
+  },
+  {
+    "question": "What is a compass used for?",
+    "options": ["Direction", "Speed", "Altitude", "Pressure"],
+    "correctAnswer": "Direction"
+  },
+  {
+    "question": "What does a gas chromatograph measure?",
+    "options": ["Concentration of Gases", "Temperature", "Pressure", "Humidity"],
+    "correctAnswer": "Concentration of Gases"
+  },
+  {
+    "question": "What is a manometer used to measure?",
+    "options": ["Pressure", "Speed", "Temperature", "Altitude"],
+    "correctAnswer": "Pressure"
+  },
+  {
+    "question": "What is an anemometer used to measure?",
+    "options": ["Wind Speed", "Pressure", "Temperature", "Humidity"],
+    "correctAnswer": "Wind Speed"
+  },
+  {
+    "question": "What does a refractometer measure?",
+    "options": ["Refractive Index", "Temperature", "Pressure", "Altitude"],
+    "correctAnswer": "Refractive Index"
+  },
+  {
+    "question": "What is a microscope used for in biology?",
+    "options": ["Viewing cells", "Measuring temperature", "Measuring pressure", "Observing weather"],
+    "correctAnswer": "Viewing cells"
+  },
+  {
+    "question": "What is a centrifuge used for?",
+    "options": ["Separating substances", "Measuring temperature", "Observing weather", "Weighing objects"],
+    "correctAnswer": "Separating substances"
+  },
+  {
+    "question": "What is a laser rangefinder used to measure?",
+    "options": ["Distance", "Speed", "Temperature", "Pressure"],
+    "correctAnswer": "Distance"
+  },
+  {
+    "question": "What is a barograph used for?",
+    "options": ["Recording atmospheric pressure", "Measuring speed", "Measuring temperature", "Recording humidity"],
+    "correctAnswer": "Recording atmospheric pressure"
+  }
+],
+
+
+
+
+
+
 };
