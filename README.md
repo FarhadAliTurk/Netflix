@@ -1,4 +1,4 @@
-# React Quiz App
+# React LearnMCQs
 
 Welcome to the **React Quiz App**! This is a fully responsive, modern quiz application built with **React 19** and styled using **Bootstrap 5**. It allows users to test their knowledge with multiple-choice questions (MCQs) and provides a sleek, interactive user experience.
 
@@ -9,6 +9,7 @@ Welcome to the **React Quiz App**! This is a fully responsive, modern quiz appli
 - **Dynamic Quiz Categories**: Choose between different quiz categories, such as:
   - *Countries and their Capitals*
   - *Countries and their Currencies*
+  - *Discoveries and Inventions*
   
 - **Stylish Landing Page**: A beautifully designed landing page with a "Start Quiz" button.
   
