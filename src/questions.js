@@ -418,10 +418,6 @@ export const questions = {
   
   ],
 
-
-
-
-
   
   currencies: [
     {
@@ -754,6 +750,303 @@ export const questions = {
       options: ["Euro", "Markka", "Pound", "Dollar"],
       correctAnswer: "Euro",
   },
-  
-  ],
+   
+],
+
+
+
+
+
+
+
+  discoveriesAndInventions : [
+      {
+        "question": "Who is credited with the discovery of Gravity?",
+        "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "John Dalton"],
+        "correctAnswer": "Isaac Newton"
+      },
+      {
+        "question": "Who is known for their work on the nature of Electricity?",
+        "options": ["Benjamin Franklin", "Alessandro Volta", "Michael Faraday", "Thomas Edison"],
+        "correctAnswer": "Benjamin Franklin"
+      },
+      {
+        "question": "Who discovered the circulation of Blood?",
+        "options": ["William Harvey", "Edward Jenner", "René Laennec", "Frederick Banting"],
+        "correctAnswer": "William Harvey"
+      },
+      {
+        "question": "Who is credited with the discovery of Oxygen?",
+        "options": ["Joseph Priestley", "Henry Cavendish", "Jan Ingenhousz", "John Dalton"],
+        "correctAnswer": "Joseph Priestley"
+      },
+      {
+        "question": "Who discovered Hydrogen?",
+        "options": ["Henry Cavendish", "Joseph Priestley", "Robert Boyle", "Antoine Lavoisier"],
+        "correctAnswer": "Henry Cavendish"
+      },
+      {
+        "question": "Who discovered Radioactivity?",
+        "options": ["Henri Becquerel", "Marie Curie", "Pierre Curie", "Ernest Rutherford"],
+        "correctAnswer": "Henri Becquerel"
+      },
+      {
+        "question": "Who is credited with the discovery of the Electron?",
+        "options": ["J.J. Thomson", "Ernest Rutherford", "James Chadwick", "Niels Bohr"],
+        "correctAnswer": "J.J. Thomson"
+      },
+      {
+        "question": "Who discovered the Proton?",
+        "options": ["Ernest Rutherford", "J.J. Thomson", "James Chadwick", "Max Planck"],
+        "correctAnswer": "Ernest Rutherford"
+      },
+      {
+        "question": "Who discovered the Neutron?",
+        "options": ["James Chadwick", "Ernest Rutherford", "Niels Bohr", "Werner Heisenberg"],
+        "correctAnswer": "James Chadwick"
+      },
+      {
+        "question": "Who discovered X-rays?",
+        "options": ["Wilhelm Roentgen", "Max Planck", "Albert Einstein", "Niels Bohr"],
+        "correctAnswer": "Wilhelm Roentgen"
+      },
+      {
+        "question": "Who is credited with determining the structure of DNA?",
+        "options": ["Watson and Crick", "Rosalind Franklin", "Maurice Wilkins", "Linus Pauling"],
+        "correctAnswer": "Watson and Crick"
+      },
+      {
+        "question": "Who discovered Insulin?",
+        "options": ["Frederick Banting", "Charles Best", "John Macleod", "James Collip"],
+        "correctAnswer": "Frederick Banting"
+      },
+      {
+        "question": "Who developed the Smallpox Vaccine?",
+        "options": ["Edward Jenner", "Louis Pasteur", "Jonas Salk", "Albert Sabin"],
+        "correctAnswer": "Edward Jenner"
+      },
+      {
+        "question": "Who discovered Penicillin?",
+        "options": ["Alexander Fleming", "Howard Florey", "Ernst Chain", "Selman Waksman"],
+        "correctAnswer": "Alexander Fleming"
+      },
+      {
+        "question": "Who proposed the Atomic Theory?",
+        "options": ["John Dalton", "Democritus", "Niels Bohr", "Erwin Schrödinger"],
+        "correctAnswer": "John Dalton"
+      },
+      {
+        "question": "Who developed the Theory of Relativity?",
+        "options": ["Albert Einstein", "Isaac Newton", "Galileo Galilei", "Stephen Hawking"],
+        "correctAnswer": "Albert Einstein"
+      },
+      {
+        "question": "Who is credited with creating the Periodic Table?",
+        "options": ["Dmitri Mendeleev", "Antoine Lavoisier", "John Newlands", "Julius Lothar Meyer"],
+        "correctAnswer": "Dmitri Mendeleev"
+      },
+      {
+        "question": "Who is considered the father of Quantum Theory?",
+        "options": ["Max Planck", "Albert Einstein", "Niels Bohr", "Werner Heisenberg"],
+        "correctAnswer": "Max Planck"
+      },
+      {
+        "question": "Who formulated the Law of Inertia?",
+        "options": ["Galileo Galilei", "Isaac Newton", "Johannes Kepler", "Nicolaus Copernicus"],
+        "correctAnswer": "Galileo Galilei"
+      },
+      {
+        "question": "Who formulated the Laws of Motion?",
+        "options": ["Isaac Newton", "Galileo Galilei", "Albert Einstein", "Stephen Hawking"],
+        "correctAnswer": "Isaac Newton"
+      },
+      {
+        "question": "Who formulated the Law of Gravitation?",
+        "options": ["Isaac Newton", "Johannes Kepler", "Nicolaus Copernicus", "Tycho Brahe"],
+        "correctAnswer": "Isaac Newton"
+      },
+      {
+        "question": "Who proposed the Theory of Evolution by natural selection?",
+        "options": ["Charles Darwin", "Alfred Russel Wallace", "Jean-Baptiste Lamarck", "Gregor Mendel"],
+        "correctAnswer": "Charles Darwin"
+      },
+      {
+        "question": "Who is credited with the first discovery of the Cell?",
+        "options": ["Robert Hooke", "Antonie van Leeuwenhoek", "Matthias Schleiden", "Theodor Schwann"],
+        "correctAnswer": "Robert Hooke"
+      },
+      {
+        "question": "Who is known for his early observations of Bacteria?",
+        "options": ["Antonie van Leeuwenhoek", "Robert Hooke", "Louis Pasteur", "Robert Koch"],
+        "correctAnswer": "Antonie van Leeuwenhoek"
+      },
+      {
+        "question": "Who is credited with the discovery of the Virus?",
+        "options": ["Dmitri Ivanovsky", "Louis Pasteur", "Robert Koch", "Alexander Fleming"],
+        "correctAnswer": "Dmitri Ivanovsky"
+      },
+      {
+        "question": "Who described the Photosynthesis Process?",
+        "options": ["Jan Ingenhousz", "Joseph Priestley", "Cornelis Van Niel", "Melvin Calvin"],
+        "correctAnswer": "Jan Ingenhousz"
+      },
+      {
+        "question": "Who invented the Telephone?",
+        "options": ["Alexander Graham Bell", "Elisha Gray", "Antonio Meucci", "Thomas Edison"],
+        "correctAnswer": "Alexander Graham Bell"
+      },
+      {
+        "question": "Who is credited with inventing the Light Bulb?",
+        "options": ["Thomas Edison", "Joseph Swan", "Nikola Tesla", "George Westinghouse"],
+        "correctAnswer": "Thomas Edison"
+      },
+      {
+        "question": "Who significantly improved the Steam Engine?",
+        "options": ["James Watt", "Thomas Newcomen", "Robert Fulton", "George Stephenson"],
+        "correctAnswer": "James Watt"
+      },
+      {
+        "question": "Who are credited with inventing the Airplane?",
+        "options": ["Wright Brothers", "Leonardo da Vinci", "Otto Lilienthal", "Glenn Curtiss"],
+        "correctAnswer": "Wright Brothers"
+      },
+      {
+        "question": "Who is considered the originator of the concept of the Computer?",
+        "options": ["Charles Babbage", "Alan Turing", "Ada Lovelace", "John von Neumann"],
+        "correctAnswer": "Charles Babbage"
+      },
+      {
+        "question": "Who is credited with the invention of the World Wide Web (WWW)?",
+        "options": ["Tim Berners-Lee", "Vinton Cerf", "Robert Kahn", "Ray Tomlinson"],
+        "correctAnswer": "Tim Berners-Lee"
+      },
+      {
+        "question": "Who invented Television?",
+        "options": ["John Logie Baird", "Philo Farnsworth", "Vladimir Zworykin", "Allen B. DuMont"],
+        "correctAnswer": "John Logie Baird"
+      },
+      {
+        "question": "Who is credited with the invention of Radio?",
+        "options": ["Guglielmo Marconi", "Nikola Tesla", "Heinrich Hertz", "Reginald Fessenden"],
+        "correctAnswer": "Guglielmo Marconi"
+      },
+      {
+        "question": "Who is credited with the first photographic image using a Camera?",
+        "options": ["Joseph Nicéphore Niépce", "Louis Daguerre", "William Henry Fox Talbot", "George Eastman"],
+        "correctAnswer": "Joseph Nicéphore Niépce"
+      },
+      {
+        "question": "Who invented the Printing Press with movable type?",
+        "options": ["Johannes Gutenberg", "Cai Lun", "Aldus Manutius", "Benjamin Franklin"],
+        "correctAnswer": "Johannes Gutenberg"
+      },
+      {
+        "question": "Who developed the first practical Refrigerator?",
+        "options": ["Carl von Linde", "Willis Carrier", "Albert Einstein", "Thaddeus Lowe"],
+        "correctAnswer": "Carl von Linde"
+      },
+      {
+        "question": "Who invented the Electric Motor?",
+        "options": ["Michael Faraday", "Nikola Tesla", "Thomas Edison", "André-Marie Ampère"],
+        "correctAnswer": "Michael Faraday"
+      },
+      {
+        "question": "Who created the first Solar Cell?",
+        "options": ["Charles Fritts", "Albert Einstein", "Edmond Becquerel", "Russell Ohl"],
+        "correctAnswer": "Charles Fritts"
+      },
+      {
+        "question": "Who built the first navigable Submarine?",
+        "options": ["Cornelis Drebbel", "Robert Fulton", "John Philip Holland", "Simon Lake"],
+        "correctAnswer": "Cornelis Drebbel"
+      },
+      {
+        "question": "Who is credited with inventing the first modern Air Conditioner?",
+        "options": ["Willis Carrier", "John Gorrie", "Stuart Cramer", "Reuben Trane"],
+        "correctAnswer": "Willis Carrier"
+      },
+      {
+        "question": "Who invented the Gatling Gun (an early Machine Gun)?",
+        "options": ["Richard Gatling", "Hiram Maxim", "John Browning", "Oliver Winchester"],
+        "correctAnswer": "Richard Gatling"
+      },
+      {
+        "question": "Who is credited with the invention of the Microscope?",
+        "options": ["Zacharias Janssen", "Antonie van Leeuwenhoek", "Robert Hooke", "Ernst Ruska"],
+        "correctAnswer": "Zacharias Janssen"
+      },
+      {
+        "question": "Who invented the Safety Lamp for miners?",
+        "options": ["Humphry Davy", "George Stephenson", "Michael Faraday", "Carl Auer von Welsbach"],
+        "correctAnswer": "Humphry Davy"
+      },
+      {
+        "question": "Who is credited with the invention of the Jet Engine?",
+        "options": ["Frank Whittle", "Hans von Ohain", "Enrico Forlanini", "Henri Coandă"],
+        "correctAnswer": "Frank Whittle"
+      },
+      {
+        "question": "Who launched the first liquid-fueled Rocket?",
+        "options": ["Robert Goddard", "Wernher von Braun", "Konstantin Tsiolkovsky", "Hermann Oberth"],
+        "correctAnswer": "Robert Goddard"
+      },
+      {
+        "question": "Who invented the Stethoscope?",
+        "options": ["René Laennec", "Hippocrates", "Galen", "Andreas Vesalius"],
+        "correctAnswer": "René Laennec"
+      },
+      {
+        "question": "Who is credited with the development of Radar?",
+        "options": ["Robert Watson-Watt", "Guglielmo Marconi", "Heinrich Hertz", "Christian Hülsmeyer"],
+        "correctAnswer": "Robert Watson-Watt"
+      },
+      {
+        "question": "Who invented the Laser?",
+        "options": ["Theodore Maiman", "Albert Einstein", "Gordon Gould", "Charles Townes"],
+        "correctAnswer": "Theodore Maiman"
+      },
+      {
+        "question": "Who is credited with the early development of Plastic?",
+        "options": ["Alexander Parkes", "Leo Baekeland", "John Wesley Hyatt", "Wallace Carothers"],
+        "correctAnswer": "Alexander Parkes"
+      },
+      {
+        "question": "Who invented the first electric Battery?",
+        "options": ["Alessandro Volta", "Luigi Galvani", "Michael Faraday", "Gaston Planté"],
+        "correctAnswer": "Alessandro Volta"
+      },
+      {
+        "question": "Who developed the Braille System?",
+        "options": ["Louis Braille", "Charles Barbier", "Valentin Haüy", "Helen Keller"],
+        "correctAnswer": "Louis Braille"
+      },
+      {
+        "question": "Who is credited with the synthesis of Aspirin?",
+        "options": ["Felix Hoffmann", "Arthur Eichengrün", "Hippocrates", "Galen"],
+        "correctAnswer": "Felix Hoffmann"
+      },
+      {
+        "question": "Who invented a practical Typewriter?",
+        "options": ["Christopher Sholes", "Henry Mill", "Pellegrino Turri", "Jean-Baptiste Schwilgué"],
+        "correctAnswer": "Christopher Sholes"
+      },
+      {
+        "question": "Who invented the Diesel Engine?",
+        "options": ["Rudolf Diesel", "Nikolaus Otto", "Karl Benz", "Gottlieb Daimler"],
+        "correctAnswer": "Rudolf Diesel"
+      },
+      {
+        "question": "Who invented the Fountain Pen?",
+        "options": ["Lewis Waterman", "Petrache Poenaru", "John Loud", "László Bíró"],
+        "correctAnswer": "Lewis Waterman"
+      },
+      {
+        "question": "Who developed the first practical Helicopter?",
+        "options": ["Igor Sikorsky", "Leonardo da Vinci", "Étienne Œhmichen", "Paul Cornu"],
+        "correctAnswer": "Igor Sikorsky"
+      }
+    ],
+
+
+
 };

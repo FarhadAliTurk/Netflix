@@ -27,23 +27,37 @@ function QuizPage({ category, onEnd }) {
   const question = questions[category][currentQuestion];
 
   return (
-    <div className="container mt-5">
-      <div className="card">
+    <div className="quiz-page container mt-5 vh-100 d-flex justify-content-center align-items-center">
+      <div className="card shadow-lg">
+        {/* Progress Bar */}
+        <div className="progress" style={{ height: "8px" }}>
+          <div
+            className="progress-bar bg-success"
+            role="progressbar"
+            style={{
+              width: `${((currentQuestion + 1) / totalQuestions) * 100}%`,
+            }}
+            aria-valuenow={((currentQuestion + 1) / totalQuestions) * 100}
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+
         <div className="card-body">
-          {/* Progress Indicator */}
-          <h6 className="text-muted mb-3">
+          {/* Question Counter */}
+          <h6 className="text-muted mb-4">
             Question {currentQuestion + 1} of {totalQuestions}
           </h6>
 
           {/* Question */}
-          <h5 className="card-title">{question.question}</h5>
+          <h3 className="card-title mb-4 text-primary">{question.question}</h3>
 
           {/* Answer Options */}
-          <div>
+          <div className="mb-4">
             {question.options.map((option, index) => (
               <button
                 key={index}
-                className={`btn btn-block mb-3 ${
+                className={`btn btn-lg btn-block mb-3 ${
                   selectedAnswer
                     ? option === question.correctAnswer
                       ? "btn-success"
@@ -62,7 +76,7 @@ function QuizPage({ category, onEnd }) {
 
           {/* Next Button */}
           <button
-            className="btn btn-primary"
+            className="btn btn-primary btn-lg px-5"
             onClick={handleNext}
             disabled={!selectedAnswer}
           >

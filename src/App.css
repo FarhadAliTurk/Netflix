@@ -6,9 +6,9 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden; /* Disable scrolling */
-  height: 100vh; /* Ensure the body takes full viewport height */
-  width: 100vw; /* Ensure the body takes full viewport width */
+  overflow-x: hidden; /* Allow vertical scrolling */
+  overflow-y: auto;
+  min-height: 100vh;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -26,7 +26,7 @@ p {
   justify-content: center;
   align-items: center;
   height: 100vh;
-  overflow: hidden; /* Ensure no scrolling for centered content */
+  overflow: hidden;
 }
 
 /* Buttons */
@@ -45,156 +45,238 @@ button:focus {
   box-shadow: 0 0 0 0.2rem rgba(13, 202, 240, 0.5);
 }
 
-/* Landing Page */
+
+/* Landing Page Styles */
 .landing-page {
+  background: linear-gradient(120deg, #f8f9fa, #e0f7fa);
+  color: #343a40;
   text-align: center;
-  background-color: #ffffff;
-  height: 100vh; /* Fit within viewport */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  padding-bottom: 150px; /* Increased space for footer */
 }
 
 .landing-page h1 {
   font-size: 3rem;
-  color: #0d6efd; /* Bootstrap primary color */
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.landing-page p {
+  font-size: 1.25rem;
+  color: #6c757d;
 }
 
 .landing-page button {
-  padding: 0.75rem 2rem;
   font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
-/* Category Page */
+.landing-page button:hover {
+  transform: scale(1.05);
+  background-color: #0b5ed7;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Category Page Styles */
 .category-page {
-  height: 100vh; /* Fit within viewport */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  background: linear-gradient(135deg, #eef2f3, #ffffff);
+  font-family: 'Poppins', sans-serif;
   text-align: center;
 }
 
 .category-page h1 {
   font-size: 2.5rem;
   color: #0d6efd;
-  margin-bottom: 2rem;
-}
-
-.category-page .btn {
-  padding: 0.75rem 2rem;
-  font-size: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-/* Quiz Page */
-.quiz-card {
-  max-width: 600px;
-  margin: 0 auto;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.quiz-card h5 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #0d6efd;
-}
-
-.quiz-card .btn {
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  border-radius: 8px;
-}
-
-.quiz-card .btn-success {
-  background-color: #28a745 !important;
-}
-
-.quiz-card .btn-danger {
-  background-color: #dc3545 !important;
-}
-
-.quiz-card .btn-outline-primary {
-  border-color: #0d6efd !important;
-  color: #0d6efd !important;
-}
-
-.quiz-card .btn-outline-primary:hover {
-  background-color: #0d6efd !important;
-  color: #fff !important;
-}
-
-.quiz-card .btn:disabled {
-  opacity: 0.6;
-}
-
-.quiz-progress {
-  margin-bottom: 1rem;
-}
-
-/* Result Page */
-.result-card {
-  max-width: 400px;
-  margin: 0 auto;
-  background-color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-}
-
-.result-card h5 {
-  font-size: 1.5rem;
-  color: #0d6efd;
-  margin-bottom: 1rem;
-}
-
-.result-card p {
-  font-size: 2.5rem;
   font-weight: 700;
-  color: #28a745; /* Green for positive results */
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.result-card button {
-  padding: 0.5rem 1.5rem;
-  font-size: 1rem;
-  margin-top: 1rem;
+.category-page .category-btn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Footer */
+.category-page .category-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.category-page .btn-outline-success {
+  color: #198754;
+  border-color: #198754;
+}
+
+.category-page .btn-outline-success:hover {
+  background-color: #198754;
+  color: #fff;
+}
+
+.category-page .btn-outline-info {
+  color: #0dcaf0;
+  border-color: #0dcaf0;
+}
+
+.category-page .btn-outline-info:hover {
+  background-color: #0dcaf0;
+  color: #fff;
+}
+
+.category-page .btn-outline-warning {
+  color: #ffc107;
+  border-color: #ffc107;
+}
+
+.category-page .btn-outline-warning:hover {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+/* Quiz Page Styles */
+.quiz-page {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Card Styling */
+.quiz-page .card {
+  border: none;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Progress Bar Styling */
+.quiz-page .progress-bar {
+  transition: width 0.4s ease;
+}
+
+/* Question Title */
+.quiz-page .card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+/* Buttons */
+.quiz-page .btn {
+  font-size: 1.25rem;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.quiz-page .btn:hover:not(:disabled) {
+  transform: scale(1.05);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-page .btn-outline-primary:hover {
+  background-color: #0d6efd;
+  color: #fff;
+}
+
+.quiz-page .btn-danger:hover,
+.quiz-page .btn-success:hover {
+  transform: scale(1.05);
+}
+
+.quiz-page .btn[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Next Button */
+.quiz-page .btn-primary {
+  font-size: 1.25rem;
+  padding: 0.75rem 2rem;
+  border-radius: 50px;
+}
+
+
+
+/* Result Page Styles */
+.result-page {
+  background: linear-gradient(135deg, #eef2f3, #ffffff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.result-page .card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+.result-page .card-title {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #0d6efd;
+}
+
+.result-page .card-subtitle {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+.result-page .display-1 {
+  font-size: 4rem;
+  color: #198754;
+  font-weight: 800;
+}
+
+.result-page .btn {
+  font-size: 1.25rem;
+  font-weight: 600;
+  border-radius: 50px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.result-page .btn:hover {
+  transform: translateY(-2px);
+  background-color: #0b5ed7;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+
 /* Footer Styles */
-footer {
-  background-color: #212529; /* Dark background */
-  color: #ffffff; /* White text */
-  padding: 20px 0;
-  position: fixed; /* Fixed position */
-  bottom: 0; /* Stick to the bottom */
-  width: 100%; /* Full width */
-  z-index: 1000; /* Ensure it sits above other content */
-  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Slight shadow for better appearance */
-}
-
-footer .social-icon {
+.footer {
+  background: linear-gradient(120deg, #0d6efd, #6610f2);
   color: #ffffff;
-  transition: color 0.3s ease, transform 0.3s ease;
+  padding: 30px 15px;
+  text-align: center;
+  box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
-footer .social-icon:hover {
-  color: #0dcaf0; /* Bootstrap primary accent color */
-  transform: scale(1.2); /* Slight zoom-in effect */
+/* Social Icons */
+.footer .social-icon {
+  color: #ffffff;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
-footer p {
+.footer .social-icon:hover {
+  transform: scale(1.2);
+  color: #f8d210;
+}
+
+/* Footer Text */
+.footer p {
   font-size: 0.9rem;
-  color: #adb5bd; /* Muted text color */
   margin: 0;
+  color: #f8f9fa;
 }
 
-footer p:hover {
-  color: #ffffff; /* Highlight text on hover */
-  transition: color 0.3s ease;
+.footer p strong {
+  font-weight: bold;
+  color: #ffdd59;
 }
-
 
 /* Responsive Design */
 @media (max-width: 768px) {
