@@ -1,6 +1,6 @@
 {
-  "homepage": "https://FarhadAliTurk.github.io/LearnMCQs",
-  "name": "LearnMCQs",
+  "homepage": "https://farhadaliturk.github.io/LearnMCQ",
+  "name": "learnmcq",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
