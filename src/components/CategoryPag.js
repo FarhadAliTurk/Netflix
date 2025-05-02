@@ -20,14 +20,14 @@ function CategoryPage({ onSelect }) {
           </button>
           <br />
           <button
-            className="btn btn-outline-success btn-lg mb-3 px-5 py-3 category-btn"
+            className="btn btn-outline-info btn-lg mb-3 px-5 py-3 category-btn"
             onClick={() => onSelect("capitals")}
           >
             🌍 Capitals
           </button>
           <br />
           <button
-            className="btn btn-outline-info btn-lg mb-3 px-5 py-3 category-btn"
+            className="btn btn-outline-secondary btn-lg mb-3 px-5 py-3 category-btn"
             onClick={() => onSelect("currencies")}
           >
             💰 Currencies
@@ -76,7 +76,7 @@ function CategoryPage({ onSelect }) {
           </button>
           <br />
           <button
-            className="btn btn-outline-primary btn-lg px-5 py-3 category-btn"
+            className="btn btn-outline-warning btn-lg px-5 py-3 category-btn"
             onClick={() => onSelect("computerBasics")}
           >
             💻Computer Basics
