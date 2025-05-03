@@ -1,41 +1,30 @@
-import React, { useState } from "react";
-import LandingPage from "./components/LandingPage";
-import CategoryPage from "./components/CategoryPag";
-import QuizPage from "./components/QuizPage";
-import ResultPage from "./components/ResultPage";
-import Footer from "./components/Footer";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Header from './components/Header';
+import Footer from './components/Footer';
+import HeroSection from './components/HeroSection';
+import ProductList from './components/ProductList';
+import AboutUs from './components/AboutUs';
+import ContactUs from './components/ContactUs';
+import Cart from './components/Cart';
+import Account from './components/Account';
 
 function App() {
-  const [step, setStep] = useState("landing");
-  const [category, setCategory] = useState("");
-  const [score, setScore] = useState(0);
-
-  const handleStart = () => setStep("category");
-  const handleCategorySelect = (selectedCategory) => {
-    setCategory(selectedCategory);
-    setStep("quiz");
-  };
-  const handleQuizEnd = (finalScore) => {
-    setScore(finalScore);
-    setStep("result");
-  };
-  const handleRestart = () => {
-    setStep("landing");
-    setScore(0);
-    setCategory("");
-  };
-
   return (
-    <div>
-      {step === "landing" && <LandingPage onStart={handleStart} />}
-      {step === "category" && <CategoryPage onSelect={handleCategorySelect} />}
-      {step === "quiz" && <QuizPage category={category} onEnd={handleQuizEnd} />}
-      {step === "result" && <ResultPage score={score} onRestart={handleRestart} />}
-      <Footer />
-    </div>
-    
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<HeroSection />} />
+          <Route path="/sale" element={<ProductList />} />
+          <Route path="/about-us" element={<AboutUs />} />
+          <Route path="/contact-us" element={<ContactUs />} />
+          <Route path="/cart" element={<Cart />} />
+          <Route path="/account" element={<Account />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
