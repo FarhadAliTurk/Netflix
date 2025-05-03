@@ -14,14 +14,14 @@ const mockProducts = [
     id: 2,
     name: 'Denim Jacket',
     price: 50,
-    image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwJi0Rbuepci_jj8PAcjdOh02A5TzAL-_swA&s',
+    image: 'https://denims.pk/cdn/shop/files/Mens_Denim_Jacket_Stretchable_Fine_Lycra_-_DENIMS_-5605370.jpg?v=1731804684&width=1200',
     tag: 'Sale',
   },
   {
     id: 3,
     name: 'Sneakers',
     price: 80,
-    image: 'https://sc04.alicdn.com/kf/H37832190ddbd497cadb6fb0d78a38d1eM/230424467/H37832190ddbd497cadb6fb0d78a38d1eM.jpg',
+    image: 'https://1ststep.pk/cdn/shop/files/7_426447d9-598d-4cd7-935a-ab1b9426b253_2048x2048.webp?v=1743779225',
     tag: 'Hot',
   },
   {

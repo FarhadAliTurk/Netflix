@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import '../styles/Cart.css'; // Adjust the path as necessary
 
 const initialCartItems = [
-  { id: 1, name: 'Casual T-Shirt', price: 20, quantity: 2, image: 'https://via.placeholder.com/100x100?text=T-Shirt' },
-  { id: 2, name: 'Denim Jacket', price: 50, quantity: 1, image: 'https://via.placeholder.com/100x100?text=Denim+Jacket' },
+  { id: 1, name: 'Casual T-Shirt', price: 20, quantity: 2, image: 'https://outfitters.com.pk/cdn/shop/files/F1403106901_2.jpg?v=1745911093' },
+  { id: 2, name: 'Denim Jacket', price: 50, quantity: 1, image: 'https://denims.pk/cdn/shop/files/Mens_Denim_Jacket_Stretchable_Fine_Lycra_-_DENIMS_-5605370.jpg?v=1731804684&width=1200' },
 ];
 
 function Cart() {

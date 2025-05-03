@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
 
 function Header() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
       {/* Logo Section */}
@@ -14,11 +16,19 @@ function Header() {
             className="logo-image"
           />
         </Link>
-        <span className="tagline">Fashion Forward, Always,</span>
+        <span className="tagline">Fashion Forward, Always</span>
+
+        <button
+          className="menu-toggle"
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Toggle menu"
+        >
+          <i className="fas fa-bars"></i>
+        </button>
       </div>
 
       {/* Navigation Section */}
-      <nav className="nav-links">
+      <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
         <Link to="/sale" className="highlighted">Sale</Link>
         <Link to="/about-us">About</Link>
         <Link to="/contact-us">Contact</Link>
