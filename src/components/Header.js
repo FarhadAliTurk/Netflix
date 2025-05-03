@@ -11,7 +11,7 @@ function Header() {
       <div className="logo-section">
         <Link to="/" className="logo">
           <img
-            src="https://png.pngtree.com/png-vector/20241102/ourmid/pngtree-clothing-brand-logo-vector-png-image_14220479.png"
+            src="https://www.logo.wine/a/logo/Chanel/Chanel-Logo.wine.svg"
             alt="Clothing Brand Logo"
             className="logo-image"
           />
