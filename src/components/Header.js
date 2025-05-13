@@ -1,56 +1,57 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React from 'react';
 import '../styles/Header.css';
 
 function Header() {
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
-    <header className="header">
-      {/* Logo Section */}
-      <div className="logo-section">
-        <Link to="/" className="logo">
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid">
+        {/* Netflix Logo */}
+        <a className="navbar-brand" href="/">
           <img
-            src="https://www.logo.wine/a/logo/Chanel/Chanel-Logo.wine.svg"
-            alt="Clothing Brand Logo"
-            className="logo-image"
+            src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+            alt="Netflix Logo"
+            className="netflix-logo"
           />
-        </Link>
-        <span className="tagline">Fashion Forward, Always</span>
+        </a>
 
+        {/* Hamburger Menu for Mobile */}
         <button
-          className="menu-toggle"
-          onClick={() => setMenuOpen(!menuOpen)}
-          aria-label="Toggle menu"
+          className="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-          <i className="fas fa-bars"></i>
+          <span className="navbar-toggler-icon"></span>
         </button>
-      </div>
 
-      {/* Navigation Section */}
-      <nav className={`nav-links ${menuOpen ? 'open' : ''}`}>
-        <Link to="/sale" className="highlighted">Sale</Link>
-        <Link to="/about-us">About</Link>
-        <Link to="/contact-us">Contact</Link>
-      </nav>
-
-      {/* Search and Icons */}
-      <div className="actions-section">
-        <div className="search-bar">
-          <input type="text" placeholder="Search for style..." />
-          <button type="button">
-            <i className="fas fa-search"></i>
-          </button>
+        {/* Navigation Links */}
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <a className="nav-link" href="/home">Home</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/tv-shows">TV Shows</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/movies">Movies</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/new-popular">New & Popular</a>
+            </li>
+            <li className="nav-item">
+              <a className="nav-link" href="/my-list">My List</a>
+            </li>
+          </ul>
         </div>
-        <Link to="/account" className="account-icon" title="Account">
-          <i className="fas fa-user-circle"></i>
-        </Link>
-        <Link to="/cart" className="cart-icon" title="Cart">
-          <i className="fas fa-shopping-bag"></i>
-          <span className="cart-count">3</span>
-        </Link>
+
+        {/* Sign In Button */}
+        <a href="/signin" className="btn btn-danger btn-sm">Sign In</a>
       </div>
-    </header>
+    </nav>
   );
 }
 

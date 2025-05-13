@@ -1,0 +1,74 @@
+.row {
+  margin: 30px 0;
+  width: 100%;
+  padding: 0 16px;
+}
+
+.row h2 {
+  color: #fff;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  font-size: 22px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+/* Poster container */
+.row-posters {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 12px;
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar styling */
+.row-posters::-webkit-scrollbar {
+  height: 8px;
+}
+
+.row-posters::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.row-posters::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+/* Each poster */
+.row-poster {
+  flex: 0 0 auto;
+  max-height: 180px;
+  border-radius: 14px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.row-poster:hover {
+  transform: scale(1.15);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+  .row h2 {
+    font-size: 20px;
+  }
+
+  .row-poster {
+    max-height: 140px;
+  }
+}
+
+@media (max-width: 480px) {
+  .row h2 {
+    font-size: 18px;
+  }
+
+  .row-poster {
+    max-height: 120px;
+  }
+}
